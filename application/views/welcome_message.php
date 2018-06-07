@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Đây là trang front-end</h1>
+	<h1>front-end</h1>
 
 	
 </div>
