@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>img/backend/apple-icon.png" />
-    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>img/favicon.png" />
+    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>img/backend/LogoSHTP.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>SHTP - SaiGon HiTech Park</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -22,41 +21,42 @@
 
 <body>
     <div class="wrapper">
-        <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-        Tip 2: you can also add an image using data-image tag
-    -->
+        <div class="sidebar" data-color="purple" data-image="<?php echo base_url();?>img/backend/sidebar-1.jpg">
             <div class="logo">
                 <a href="http://www.creative-tim.com" class="simple-text">
-                    Creative Tim
+                   <img id="sidebar-logo" src="<?php echo base_url(); ?>img/backend/LogoSHTP.png">
                 </a>
             </div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
+                    <li>
+                        <a href="/maps">
+                            <i class="material-icons">location_on</i>
+                            <p>Bản Đồ</p>
+                        </a>
+                    </li>
                     <li class="active">
                         <a href="dashboard.html">
                             <i class="material-icons">dashboard</i>
-                            <p>Dashboard</p>
+                            <p>Thống kê</p>
                         </a>
                     </li>
                     <li>
                         <a href="./user.html">
                             <i class="material-icons">person</i>
-                            <p>User Profile</p>
+                            <p>Hồ Sơ</p>
                         </a>
                     </li>
                     <li>
                         <a href="./table.html">
                             <i class="material-icons">content_paste</i>
-                            <p>Table List</p>
+                            <p>Công Ty</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./typography.html">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle">
                             <i class="material-icons">library_books</i>
-                            <p>Typography</p>
+                            <p >Lô Đất</p>
                         </a>
                     </li>
                     <li>
@@ -65,27 +65,18 @@
                             <p>Icons</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="./maps.html">
-                            <i class="material-icons">location_on</i>
-                            <p>Maps</p>
-                        </a>
-                    </li>
+                    
                     <li>
                         <a href="./notifications.html">
                             <i class="material-icons text-gray">notifications</i>
                             <p>Notifications</p>
                         </a>
                     </li>
-                    <li class="active-pro">
-                        <a href="upgrade.html">
-                            <i class="material-icons">unarchive</i>
-                            <p>Upgrade to PRO</p>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
+
+
         <div class="main-panel">
             <nav class="navbar navbar-transparent navbar-absolute">
                 <div class="container-fluid">
@@ -106,7 +97,7 @@
                                     <p class="hidden-lg hidden-md">Dashboard</p>
                                 </a>
                             </li>
-                            <li class="dropdown">
+                           <!--  <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">notifications</i>
                                     <span class="notification">5</span>
@@ -129,7 +120,7 @@
                                         <a href="#">Another One</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                     <i class="material-icons">person</i>
@@ -139,7 +130,7 @@
                         </ul>
                         <form class="navbar-form navbar-right" role="search">
                             <div class="form-group  is-empty">
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm">
                                 <span class="material-input"></span>
                             </div>
                             <button type="submit" class="btn btn-white btn-round btn-just-icon">
@@ -159,17 +150,17 @@
                                     <i class="material-icons">content_copy</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">Used Space</p>
-                                    <h3 class="title">49/50
-                                        <small>GB</small>
+                                    <p class="category">Lô đất sử dụng</p>
+                                    <h3 class="title">78
+                                        <small>Lô</small>
                                     </h3>
                                 </div>
-                                <div class="card-footer">
+                               <!--  <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons text-danger">warning</i>
                                         <a href="#pablo">Get More Space...</a>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -178,14 +169,14 @@
                                     <i class="material-icons">store</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">Revenue</p>
-                                    <h3 class="title">$34,245</h3>
+                                    <p class="category">DN Đầu Tư</p>
+                                    <h3 class="title"> 52 <small>DN</small></h3>
                                 </div>
-                                <div class="card-footer">
+                                <!-- <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">date_range</i> Last 24 Hours
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -197,27 +188,27 @@
                                     <p class="category">Fixed Issues</p>
                                     <h3 class="title">75</h3>
                                 </div>
-                                <div class="card-footer">
+                               <!--  <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">local_offer</i> Tracked from Github
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
+                       <div class="col-lg-3 col-md-6 col-sm-6">
                             <div class="card card-stats">
                                 <div class="card-header" data-background-color="blue">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="material-icons">accessible-icon</i>
                                 </div>
                                 <div class="card-content">
-                                    <p class="category">Followers</p>
-                                    <h3 class="title">+245</h3>
+                                    <p class="category">User</p>
+                                    <h3 class="title">0</h3>
                                 </div>
-                                <div class="card-footer">
+                               <!--  <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">update</i> Just Updated
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -232,11 +223,11 @@
                                     <p class="category">
                                         <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today sales.</p>
                                 </div>
-                                <div class="card-footer">
+                                <!-- <div class="card-footer">
                                     <div class="stats">
                                         <i class="material-icons">access_time</i> updated 4 minutes ago
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-md-4">

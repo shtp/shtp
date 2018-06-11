@@ -16,7 +16,9 @@
         bottom: 10px;
     }
 }
-
+#sidebar-logo{
+    width: 20rem;
+}
 #map {
     position: relative;
     width: 100%;

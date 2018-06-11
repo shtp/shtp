@@ -704,7 +704,9 @@ h2.title {
     float: left;
     overflow: hidden;
 }
-
+#sidebar-logo{
+    width: 20rem;
+}
 .sidebar .logo-tim img,
 .off-canvas-sidebar .logo-tim img {
     width: 60px;
