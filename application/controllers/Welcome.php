@@ -23,7 +23,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->helper('url');
-		$this->load->view('back_end/map');
+		$this->load->view('back_end/dashboard');
 	}
 
 }

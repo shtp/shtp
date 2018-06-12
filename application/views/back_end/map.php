@@ -9,7 +9,7 @@
 	Hello World!	
 	<div id="button"><h3>On/Off
 	</h3></div>
-	<div id="map"></div>
+	<div id="map"></div>-
 	<script >
 		 var map = L.map('map').setView([10.849850, 106.799784], 15);
 
