@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "HT-3",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 19, "KyHieu": "HT", "SoHieu": 3, "MoTa": "HT-3" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 106.79836687944308, 10.825322152001357 ], [ 106.799317596453079, 10.82408486660135 ], [ 106.797535002059334, 10.822824230939768 ], [ 106.796703124675588, 10.824131556709203 ], [ 106.79836687944308, 10.825322152001357 ] ] ] } }
+]
+}
